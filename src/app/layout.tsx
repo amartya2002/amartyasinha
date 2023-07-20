@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white text-black antialiased dark:bg-black dark:text-white">
 
-        {/* <Header /> */}
+        <Header />
         <LenisProvider>
           <main>{children}</main>
         </LenisProvider>
