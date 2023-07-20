@@ -25,7 +25,7 @@ export default function Hero(): ReactElement {
   return (
     <div>
       <h1 className="sr-only">
-        Hello I'm Amartya SInha, I'm a software developer, and I love building cool interfaces for the web.
+        Hello I&apos;m Amartya SInha, I&apos;m a software developer, and I love building cool interfaces for the web.
       </h1>
       <motion.div
         className="relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-116px)]"
