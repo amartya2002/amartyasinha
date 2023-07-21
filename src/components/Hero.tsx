@@ -50,7 +50,7 @@ export default function Hero(): ReactElement {
                 Read more 
               </Link>
               <Link
-                href="/about"
+                href="https://drive.google.com/file/d/1q-1OKmv5wOnPSHG2h2pWOuvqO1eRM-AS/view?usp=sharing"
                 className="underline-magical text-md w-max cursor-pointer sm:text-lg md:text-xl xl:text-xl text-gray-600"
               >
                 Resume
