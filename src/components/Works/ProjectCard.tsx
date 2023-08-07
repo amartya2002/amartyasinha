@@ -1,5 +1,13 @@
 "use client"
-const ProjectCards = ({ image, subtitle, title, description }) => {
+interface Props {
+
+  subtitle: string;
+  title: string;
+  description: string;
+  image?: string;
+
+}
+const ProjectCards = ({ image, subtitle, title, description }: Props) => {
   return (
     <div className="  space-y-4">
       <img className="rounded-2xl hover:scale-105 duration-300   " src={image} alt={title} />
