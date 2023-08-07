@@ -3,8 +3,8 @@ function n(e) {
   }
   n.prototype = {
     init: function (e) {
-      this.phase = e.phase || 0;
-      this.offset = e.offset || 0;
+      this.phase = e.phase || 1;
+      this.offset = e.offset || 1;
       this.frequency = e.frequency || 0.001;
       this.amplitude = e.amplitude || 1;
     },
@@ -129,7 +129,7 @@ function n(e) {
     E = {
       debug: true,
       friction: 0.5,
-      trails: 20,
+      trails: 100,
       size: 50,
       dampening: 0.25,
       tension: 0.98,
@@ -147,9 +147,9 @@ function n(e) {
     ctx.frame = 1;
     f = new n({
       phase: Math.random() * 2 * Math.PI,
-      amplitude: 85,
-      frequency: 0.0015,
-      offset: 285,
+      amplitude: 100,
+      frequency: 0.01,
+      offset: 300,
     });
     document.addEventListener('mousemove', onMousemove);
     document.addEventListener('touchstart', onMousemove);

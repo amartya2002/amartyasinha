@@ -1,9 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import LenisProvider from '@/components/Providers/LenisProvider'
 import Header from '@/components/Header'
-const inter = Inter({ subsets: ['latin'] })
+const nunito = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Amartya',
@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="bg-white text-black antialiased dark:bg-black dark:text-white">
+    <html lang="en" className={nunito.className}>
+      <body className=" dark:bg-black dark:text-white">
 
         <Header />
         <LenisProvider>
