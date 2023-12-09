@@ -1,4 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const isProduction = process.env.NODE_ENV === "production";
+const assetPrefix = isProduction ? "/amartyasinha" : "";
 
-module.exports = nextConfig
+const nextConfig = {
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
+  trailingSlash: true,
+  assetPrefix,
+  basePath: assetPrefix,
+};
+
+module.exports = nextConfig;
