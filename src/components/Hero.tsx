@@ -45,7 +45,7 @@ export default function Hero(): ReactElement {
                 </h1>
                 <h2 className="dark:text-zinc-400 text-zinc-500 text-lg max-w-xl ">
                   Bringing designs to life through code, a frontend developer
-                  who's all about creating dynamic, responsive websites that
+                  who&apos;s all about creating dynamic, responsive websites that
                   delivers immersive user experiences.
                 </h2>
               </div>
