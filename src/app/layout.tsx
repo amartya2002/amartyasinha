@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 import LenisProvider from '@/components/Providers/LenisProvider'
 import Header from '@/components/Header'
+import ThemeProvider from '@/components/Providers/ThemeProvider';
 const nunito = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,14 +17,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={nunito.className}>
+    <html lang="en" suppressHydrationWarning >
       <body className=" dark:bg-black dark:text-white">
-
+<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
         <Header />
-        <LenisProvider>
-          <main>{children}</main>
+        <LenisProvider >
+          <main>
+            {children}
+            </main>
         </LenisProvider>
-
+        </ThemeProvider>
       </body>
     </html>
   )
