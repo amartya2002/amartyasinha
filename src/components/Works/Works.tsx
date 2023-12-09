@@ -8,7 +8,7 @@ export default function Works() {
           Projects
         </p>
         <p className="text-3xl md:text-5xl text-zinc-300 font-semibold  tracking-tight">
-          I've worked on
+          I&apos;ve worked on
         </p>
 
         <div className="mt-10 md:mt-12 mb-5 dark: border-b  border-zinc-300"></div>
