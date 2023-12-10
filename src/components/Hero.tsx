@@ -40,7 +40,7 @@ export default function Hero(): ReactElement {
           <div className="sm:-mt-[6rem] -mt-[8rem]">
             <div ref={ref} className="flex cursor-default flex-col space-y-2">
               {heroData.map((data, index) => (
-                <div className="mb-4">
+                <div className="mb-4" key={index}>
                   <h1 className="md:text-[5.9rem]  text-6xl font-bold mb-4 tracking-tight ">
                     <p className="fodnt-serif">{data.titleline1}</p>
                     <p className="fodnt-serif">{data.titleline2}</p>
