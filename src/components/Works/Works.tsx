@@ -1,5 +1,6 @@
 import Link from "next/link";
-import MasonryLayout from "./MasonryLayout";
+import projectDetails from "@/data/projectDetails.json";
+
 export default function Works() {
   return (
     <main className=" bg-white ">
@@ -12,22 +13,25 @@ export default function Works() {
         </p>
 
         <div className="mt-10 md:mt-12 mb-5 dark: border-b  border-zinc-300"></div>
-        <div>
-          <p className="text-2xl md:text-4xl font-semibold text-zinc-800 mb-3 tracking-tight">
-            Broadcast.
-          </p>
-          <p className="text-lg md:text-lg text-zinc-500 max-w-xl mb-6 ">
-            Created an interactive social media platform for sharing content and
-            connecting with users in real time.
-          </p>
-        </div>
 
-        <Link
-          href="/"
-          className=" text-center   px-9 w-full py-2.5  text-white font-semibold  bg-zinc-900 rounded-full"
-        >
-          Learn More
-        </Link>
+        {projectDetails.map((project, index) => (
+          <div key={index} className="w-full">
+            <p className="text-2xl md:text-4xl font-semibold text-zinc-800 mb-3 tracking-tight">
+              {project.title}
+            </p>
+            <p className="text-lg md:text-lg text-zinc-500 max-w-xl mb-6 ">
+              {project.smallDescription}
+            </p>
+            <Link
+              href={project.githubLink}
+              target="_blank"
+              className=" text-center px-9 w-full py-2.5  text-white font-semibold  bg-zinc-900 rounded-full hover:scale-105 shadow-md duration-200"
+            >
+              Learn More &#x27A3;
+            </Link>
+            <div className="mt-8 md:mt-10 mb-5 dark: border-b  border-zinc-300"></div>
+          </div>
+        ))}
       </div>
     </main>
   );

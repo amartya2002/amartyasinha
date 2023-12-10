@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useLenis } from '@studio-freight/react-lenis';
-import { useRef, useState } from 'react';
+import { useLenis } from "@studio-freight/react-lenis";
+import { useRef, useState } from "react";
 
 function opacityForBlock(sectionProgress: number, blockNumber: number) {
   const progress = sectionProgress - blockNumber;
@@ -21,7 +21,7 @@ export default function Intro() {
   });
 
   const refContainer = useRef<HTMLDivElement>(null);
-  const numOfPages = 3;
+  const numOfPages = 4;
   let progress = 0;
   const { current: elContainer } = refContainer;
 
@@ -31,8 +31,10 @@ export default function Intro() {
     const halfH = screenH / 2;
 
     const percentY =
-      Math.min(clientHeight + halfH, Math.max(-screenH, scrollY - offsetTop) + halfH) /
-      clientHeight;
+      Math.min(
+        clientHeight + halfH,
+        Math.max(-screenH, scrollY - offsetTop) + halfH
+      ) / clientHeight;
 
     progress = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages));
   }
@@ -40,25 +42,35 @@ export default function Intro() {
   return (
     <div
       ref={refContainer}
-      className="relative z-10 bg-white text-zinc-800 dark:bg-[#0a0a0a]  dark:text-zinc-200 mt-6"
+      className="relative z-10 bg-white text-zinc-800 dark:bg-[#0a0a0a]  dark:text-zinc-200 mt-6 "
       id="intro"
     >
-      <div className="mx-auto max-w-7xl px-8 py-16 md:px-20 md:py-20 text-4xl font-semibold tracking-tight  md:text-6xl ">
-        <div className="leading-[1.15]">
-          <div className="introText" style={{ opacity: opacityForBlock(progress, 0) }}>
-            This is Amartya
+      <div className="mx-auto max-w-7xl px-8 py-16 md:px-20 md:py-40 text-4xl font-semibold tracking-tight  md:text-6xl ">
+        <div className="leading-tighter">
+          <div
+            className="introText mb-3"
+            style={{ opacity: opacityForBlock(progress, 0) }}
+          >
+            Hi, I&apos;m Amartya,
           </div>
           <span
-            className="introText inline-block after:content-['_']"
+            className="introText inline-block after:content-['_'] mb-3"
             style={{ opacity: opacityForBlock(progress, 1) }}
           >
-            I use my passion and skills to build digital products and experiences.
+            Bringing ideas to life with pixel-perfect precision.
           </span>
           <span
-            className="introText inline-block"
+            className="introText inline-block mb-3"
             style={{ opacity: opacityForBlock(progress, 2) }}
           >
-            I&apos;m passionate about cutting-edge, pixel perfect UI.
+            Crafting exceptional experiences through thoughtful design.
+          </span>
+
+          <span
+            className="introText inline-block"
+            style={{ opacity: opacityForBlock(progress, 3) }}
+          >
+            Elevate your digital presence with my creative touch.
           </span>
         </div>
       </div>

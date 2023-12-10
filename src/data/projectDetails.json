@@ -1,0 +1,18 @@
+[
+    {
+        "title":"Entropy UI",
+        "smallDescription":"Entropy UI is a versatile and powerful UI component library designed to streamline your web development workflow.",
+        "bigDescription":"This is a longer description",
+        "tech-stack":"Tailwind CSS, Typescript, Next.js",
+        "githubLink":"https://github.com/amartya2002/entropyui",
+        "liveLink":""
+    },
+    {
+        "title":"Entropy Gradient",
+        "smallDescription":"A treasure trove of handpicked gradients and color palettes designed to elevate your creative projects.",
+        "bigDescription":"This is a longer description",
+        "tech-stack":"Tailwind CSS, Typescript, Next.js",
+        "githubLink":"https://github.com/amartya2002/entropycolor",
+        "liveLink":""
+    }
+]
