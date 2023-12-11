@@ -47,12 +47,12 @@ export default function Contact() {
         </p>
       </div>
 
-      <div className="text-zinc-400 text-lg max-w-lg mb-8">
+      <div className="text-zinc-500 text-lg max-w-lg mb-8">
           <p>
             Interested in collaborating or discussing job opportunities? Reach
             out at
             <Link
-              className="hover:text-orange-300 duration-300 text-zinc-300"
+              className="hover:text-orange-300 duration-300 text-zinc-800"
               href="#"
               onClick={(e) => {
                 window.location.href = "mailto:amartyasinha2202@gmail.com";
