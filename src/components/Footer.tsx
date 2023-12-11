@@ -54,7 +54,7 @@ export default function Footer() {
                     window.location.href = "mailto:amartyasinha2202@gmail.com";
                     e.preventDefault();
                 }} > amartyasinha2002@gmail.com &#8599;</Link>  
-                <p>Let's create something amazing together!</p>
+                <p>Let&apos;s create something amazing together!</p>
         </p>
 
         <div className="pt-3">
