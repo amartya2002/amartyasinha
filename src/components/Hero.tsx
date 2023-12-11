@@ -68,14 +68,20 @@ export default function Hero(): ReactElement {
               </Link></div> */}
 
               <Link
-                href="/"
+                href='#'
+                onClick={(e) => {
+                    window.location.href = "mailto:amartyasinha2202@gmail.com";
+                    e.preventDefault();
+                }}
                 className=" text-center  w-[100%] sm:w-[30%]  py-2.5 dark:text-zinc-600 text-white font-semibold dark:bg-white bg-zinc-900 rounded-full hover:scale-105 duration-200"
               >
                 Get in touch &#x2727;
               </Link>
               <Link
-                href="/"
-                className=" text-center  w-[100%] sm:w-[30%]  py-2.5 dark:text-zinc-300 font-semibold  border dark:border-zinc-800 rounded-full hover:scale-105 hover:text-blue-500 dark:hover:bg-zinc-900 duration-200"
+                href="https://drive.google.com/file/d/1vXrOMi9smbVBIRJwFItBYcoJSGHTsXpV/view?usp=sharing"
+                target="_blank"
+                className=" text-center  w-[100%] sm:w-[30%]  py-2.5 dark:text-zinc-300 font-semibold  border dark:border-zinc-800 rounded-full hover:scale-105 md:hover:text-blue-500
+                 dark:hover:bg-zinc-900 duration-200"
               >
                 Resume &#x274F;
               </Link>
