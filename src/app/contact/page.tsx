@@ -47,7 +47,7 @@ export default function Contact() {
         </p>
       </div>
 
-      <div className="text-zinc-500 text-lg max-w-lg mb-8">
+      <div className="dark:text-zinc-400 text-zinc-500 text-lg max-w-lg mb-8">
           <p>
             Interested in collaborating or discussing job opportunities? Reach
             out at
