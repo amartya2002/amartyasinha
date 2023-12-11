@@ -1,9 +1,8 @@
-"use client";
+"use client"
 
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ReactElement, useContext, useEffect, useRef } from "react";
-import { BsFillCircleFill } from "react-icons/bs";
 import { ScrollContext } from "./Providers/ScrollProvider";
 import { renderCanvas } from "./renderCanvas";
 import heroData from "@/data/heroData.json";
@@ -42,8 +41,8 @@ export default function Hero(): ReactElement {
               {heroData.map((data, index) => (
                 <div className="mb-4" key={index}>
                   <h1 className="md:text-[5.9rem]  text-6xl font-bold mb-4 tracking-tight ">
-                    <p className="fodnt-serif">{data.titleline1}</p>
-                    <p className="fodnt-serif">{data.titleline2}</p>
+                    <p>{data.titleline1}</p>
+                    <p>{data.titleline2}</p>
                     <p className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-400 to-zinc-900 font-sderif ">
                       {data.titleline3}
                     </p>
@@ -68,11 +67,8 @@ export default function Hero(): ReactElement {
               </Link></div> */}
 
               <Link
-                href='#'
-                onClick={(e) => {
-                    window.location.href = "mailto:amartyasinha2202@gmail.com";
-                    e.preventDefault();
-                }}
+                href="/contact"
+           
                 className=" text-center  w-[100%] sm:w-[30%]  py-2.5 dark:text-zinc-600 text-white font-semibold dark:bg-white bg-zinc-900 rounded-full hover:scale-105 duration-200"
               >
                 Get in touch &#x2727;

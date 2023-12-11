@@ -3,6 +3,7 @@ import React from "react";
 import ThemeSwitch from "./ThemeSwitch";
 import classNames from "classnames";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 function Header() {
   const pathName = usePathname();
   return (
@@ -35,7 +36,7 @@ function Header() {
       </div> */}
       <div className="flex items-center justify-between h-full px-6 py-12 md:px-16">
         
-        <p className=" tracking-tight text-3xl dark:text-zinc-200 gap-2 flex items-baseline">
+        <Link href="/" className=" tracking-tight text-3xl dark:text-zinc-200 gap-2 flex items-baseline">
           <span>
             <svg
               width="23"
@@ -54,7 +55,7 @@ function Header() {
           </span>
 
           Amartya.
-        </p>
+        </Link>
 
         <ThemeSwitch />
       </div>

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Hero from "@/components/Hero";
 import { ScrollProvider } from "@/components/Providers/ScrollProvider";
 import Intro from "@/components/Intro";

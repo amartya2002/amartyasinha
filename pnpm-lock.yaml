@@ -19,6 +19,7 @@ specifiers:
   react: 18.2.0
   react-dom: 18.2.0
   react-icons: ^4.10.1
+  react-scroll-section: ^3.2.5
   react-slick: ^0.29.0
   tailwindcss: 3.3.3
   typescript: 5.1.6
@@ -42,6 +43,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.12.0_react@18.2.0
+  react-scroll-section: 3.2.5_biqbaboplfbrettd7655fr4n2y
   react-slick: 0.29.0_biqbaboplfbrettd7655fr4n2y
   tailwindcss: 3.3.3
   typescript: 5.1.6
@@ -2827,6 +2829,17 @@ packages:
       use-sidecar: 1.1.2_tznpbkknyqq5lcv5sgrl332jvu
     dev: false
 
+  /react-scroll-section/3.2.5_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-zirZM01Z2fA9HezCMQlGDi+S4OkJZZb0S997lHOzYKSyHefB5rGUXKi2DR/njXpiKTWMCA4qqmp7mkTxqGhxIA==}
+    peerDependencies:
+      react: 16.8.0 || 17.x
+      react-dom: 16.8.0 || 17.x
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      smoothscroll-polyfill: 0.4.4
+    dev: false
+
   /react-slick/0.29.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-TGdOKE+ZkJHHeC4aaoH85m8RnFyWqdqRfAGkhd6dirmATXMZWAxOpTLmw2Ll/jPTQ3eEG7ercFr/sbzdeYCJXA==}
     peerDependencies:
@@ -3045,6 +3058,10 @@ packages:
   /slash/3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
+    dev: false
+
+  /smoothscroll-polyfill/0.4.4:
+    resolution: {integrity: sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==}
     dev: false
 
   /source-map-js/1.0.2:
