@@ -1,7 +1,7 @@
 "use client";
 
 import { useLenis } from "@studio-freight/react-lenis";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function opacityForBlock(sectionProgress: number, blockNumber: number) {
   const progress = sectionProgress - blockNumber;
@@ -40,6 +40,7 @@ export default function Intro() {
   }
 
   return (
+   
     <div
       ref={refContainer}
       className="relative z-10 bg-white text-zinc-800 dark:bg-[#0a0a0a]  dark:text-zinc-200 mt-6 "
