@@ -52,7 +52,7 @@ export default function Contact() {
             Interested in collaborating or discussing job opportunities? Reach
             out at
             <Link
-              className="hover:text-orange-300 duration-300 text-zinc-800"
+              className="dark:text-zinc-300 hover:text-orange-300 text-zinc-800 duration-300"
               href="#"
               onClick={(e) => {
                 window.location.href = "mailto:amartyasinha2202@gmail.com";
